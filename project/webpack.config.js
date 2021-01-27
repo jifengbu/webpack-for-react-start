@@ -16,9 +16,9 @@ module.exports = {
                     loader: "babel-loader",
                     options: {
                         presets: [
-                            '@babel/preset-env',//引入babel
-                            '@babel/preset-react' //引入babel-react
-                        ]
+                            '@babel/preset-env', //引入babel
+                            '@babel/preset-react', //引入babel-react
+                        ],
                     }
                 }
             }
