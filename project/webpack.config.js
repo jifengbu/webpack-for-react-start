@@ -23,8 +23,35 @@ module.exports = {
                 }
             },
             {
-                test: /\.less$/,
-                use:['style-loader','css-loader','less-loader']
+                test: /\.less$/i,
+                use: [
+                    {
+                        loader: "style-loader",
+                    },
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: {
+                                localIdentName: "[name]__[local]___[hash:base64:5]",
+                            },
+                        },
+                    },
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    [
+                                        "autoprefixer",
+                                    ],
+                                ],
+                            },
+                        },
+                    },
+                    {
+                        loader: "less-loader",
+                    },
+                ],
             },
         ]
     },
