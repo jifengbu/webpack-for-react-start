@@ -1,0 +1,44 @@
+.container {
+    flex: 1;
+}
+.table {
+    :global(.__last_selected) {
+        background-color: #FFD39B;
+    }
+    :global(.__last_selected:hover) {
+      background-color: #FFD39B !important;
+    }
+    :global(.ant-table-fixed) {
+        table-layout: fixed;
+    }
+    :global(.ant-table-tbody tr td) {
+        word-break: break-word;
+    }
+}
+.pageTable {
+    :global(.ant-pagination-prev), :global(.ant-pagination-next) {
+        min-width: 0px !important;
+    }
+}
+.unit {
+    margin-left: 2px;
+    color: #CD2626;
+}
+.baseValueContainer{
+    display: flex;
+    flex-direction: column;
+}
+.baseValue {
+    margin-top: 6px;
+    font-size: 10px;
+    color: red;
+}
+.summary {
+    width: 100%;
+    display: flex;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.preButton {
+    margin-right: 20px;
+}

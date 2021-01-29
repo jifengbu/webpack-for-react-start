@@ -1,0 +1,1 @@
+export modifySettingInfo from './modifySettingInfo';

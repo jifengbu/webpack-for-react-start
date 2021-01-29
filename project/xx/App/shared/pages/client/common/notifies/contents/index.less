@@ -1,0 +1,29 @@
+.list {
+    width: 800px;
+}
+.message {
+    cursor: pointer;
+}
+.table {
+    :global(.ant-table-bordered .ant-table-tbody > tr > td) {
+        border-right: none !important;
+    }
+    :global(.ant-table-tbody > tr > td) {
+        border-bottom: none !important;
+    }
+    :global(.ant-table-bordered .ant-table-thead > tr > th) {
+        border-right: none !important;
+        background-color: #d8f1fc !important;
+    }
+    :global(.ant-table-row-expand-icon) {
+        border: none !important;
+        background: none !important;
+    }
+    :global(.ant-table-tbody > tr > td) {
+        border: none !important;
+        background: none !important;
+        text-overflow:ellipsis;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,33 @@
+.container {
+    position: relative;
+}
+.progress {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left,
+.right {
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.leftAfter,
+.rightAfter {
+    position: absolute;
+    display: block;
+}
+
+.rightAfter {
+    transform-origin: left center;
+}
+.leftAfter {
+    transform-origin: right center;
+}

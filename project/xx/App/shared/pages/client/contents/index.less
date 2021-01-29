@@ -1,0 +1,141 @@
+body {
+    background-color: #FFFFFF !important;
+    overflow-x: scroll;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 1400px;
+}
+.content {
+    flex: 1;
+    display: flex;
+    margin-left: 180px;
+    overflow: hidden;
+}
+.center_content{
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    padding-left: 400px;
+    padding-right: 400px;
+    overflow: hidden;
+}
+.full_content{
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+.notifyModal {
+    font-size: 25px;
+}
+.notify {
+    font-size: 25px;
+    color: red;
+}
+:global(.ant-notification-notice-btn > button) {
+    font-size: 22px;
+    height: 44px;
+    padding: 4px;
+}
+:global(.ant-notification-notice-message) {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: blue;
+}
+//input
+:global(input::-webkit-outer-spin-button), :global(input::-webkit-inner-spin-button) {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+//tabs
+:global(.ant-tabs-bar) {
+    margin-bottom: 0 !important;
+}
+:global(.ant-tabs .ant-tabs-card>.ant-tabs-bar .ant-tabs-nav-container) {
+    height: 44px !important;
+}
+:global(.ant-tabs-tab) {
+    background-color:  #FFFFFF !important;
+    margin-top: 6px !important;
+    margin-right: 4px !important;
+    padding-top: 6px !important;
+}
+:global(.ant-tabs .ant-tabs-card>.ant-tabs-bar .ant-tabs-tab-active) {
+    color: #D72D17 !important;
+    background-color: #EAE9EC !important;
+}
+:global(.ant-tabs-nav .ant-tabs-tab:hover) {
+    color: #EEA2AD !important;
+}
+//table
+:global(.ant-table-pagination .ant-pagination) {
+    margin-right: 20px;
+}
+:global(.ant-table-fixed-header .ant-table-body-inner) {
+    overflow: hidden !important;
+}
+//Upload
+:global(.ant-upload .ant-upload-drag) {
+    padding: 2px 2px !important;
+}
+//notification
+:global(.ant-notification) {
+    z-index: 999999 !important;
+}
+:global(.ant-notification-bottomLeft) {
+    margin-left: 170px !important;
+}
+//form
+:global(.__label_color .ant-form-item-label) label {
+    color: #808000 !important;
+}
+:global(.ant-input-affix-wrapper .ant-input) {
+    min-height: auto !important;
+}
+// mocal
+:global(.ant-modal-content) {
+    top: 30px;
+}
+:global(.fullModal) {
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+    height: calc(~"100% - 5px") !important;
+    padding-bottom: 0px;
+    >:global(.ant-modal-content) {
+        top: 0px;
+        >:global(.ant-modal-body) {
+            padding: 0 5px 5px 5px;
+            >:global(div) {
+                height: calc(~"100% - 54.2px");
+            }
+        }
+    }
+}
+:global(.centerModal) {
+    top: 220px;
+}
+:global(.ant-calendar-picker-container) {
+    z-index: 99999991 !important;
+}
+:global(.ant-input-number-input) {
+    height: 28px;
+}
+:global(.__filter_click_container) {
+    display: flex;
+    flex-direction: column;
+}
+:global(.__filter_click_button) {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+:global(.__search) {
+    :global(.has-success.has-feedback:after) {
+        content: '';
+    }
+}
+:global(.__confirm > .ant-modal-content) {
+    top: 160px;
+}

@@ -1,0 +1,56 @@
+.buttonContainer {
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .button {
+        background-color: #CD3700;
+        border: 0;
+        &:hover {
+            background-color: #CD5C5C;
+        }
+    }
+}
+.helpContainer {
+    position: absolute;
+    margin-left: 4px;
+}
+.help {
+    height: 16px;
+    width: 16px;
+    display: flex;
+    margin-top: 12px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 8px;
+    color: red;
+    background-color: #CFCFCF;
+}
+.addressButton {
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
+.addressModal {
+    top: 30px;
+    width: 600px !important;
+    height: 400px !important;
+    :global(.ant-modal-body) {
+        padding: 0;
+    }
+}
+.addressModalNoButton {
+    top: 30px;
+    width: 600px !important;
+    height: 400px !important;
+    :global(.ant-modal-body) {
+        padding: 0;
+    }
+    :global(.ant-modal-footer) {
+        :global(.ant-btn-primary) {
+            display: none;
+        }
+    }
+}

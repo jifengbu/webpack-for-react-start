@@ -1,0 +1,241 @@
+/**
+初始化
+*/
+li {
+    list-style: none;
+}
+ul {
+    padding-left: 0px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url('/slclient/img/common/bg.png') center top no-repeat;
+}
+.title_bg {
+    position: relative;
+    background: url("/slclient/img/common/title_bg.png") center top no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    padding:20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.title {
+    color: #00C2FF;
+    text-align:center !important;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.leftContainer {
+    flex: 1;
+}
+.middleContainer {
+    flex: 1.2;
+    padding-top: 10px;
+}
+.middleContainerContent h2 {
+    height: 48px;
+    color: #00C2FF;
+    font-size: 30px;
+    text-align: center;
+}
+
+.middleContainerContent .middleContainerNumber {
+    position: relative;
+    height: 70px;
+    margin: 15px 160px;
+    color: #00C2FF;
+    line-height: 70px;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.middleContainerContent .middleContainerNumber::before,
+.middleContainerContent .middleContainerNumber::after {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    content: '';
+}
+.middleContainerContent .middleContainerNumber::before {
+    top: 0;
+    left: 0;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+}
+.middleContainerContent .middleContainerNumber::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+}
+.middleContainerContent .text {
+    color: #00C2FF;
+    text-align: center;
+}
+
+.map h3 {
+    margin: 12px;
+    color: #00C2FF;
+    font-size: 30px;
+    text-align: center;
+}
+
+.middleContainerContent .text span {
+    margin-left: 10px;
+    color: #3a456f;
+}
+.rightContainer {
+    flex: 1;
+}
+/**
+公共样式
+*/
+.panel {
+    position: relative;
+    height: 380px;
+    padding: 0 15px 15px 20px;
+    margin: 10px 10px;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+    background: url("/slclient/img/common/line.png") rgba(255, 255, 255, 0.03);
+}
+
+.panel::before,
+.panel::after {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    content: '';
+}
+
+.panel::before {
+    left: 0;
+    border-left: 2px solid #02a6b5;
+}
+
+.panel::after {
+    right: 0;
+    border-right: 2px solid #02a6b5;
+}
+.panelFooter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.panelFooter::before,
+.panelFooter::after {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #02a6b5;
+    content: '';
+}
+
+.panelFooter::before {
+    left: 0;
+    border-left: 2px solid #02a6b5;
+
+}
+
+.panelFooter::after {
+    right: 0;
+    border-right: 2px solid #02a6b5;
+}
+/**
+中间内容模块
+*/
+.no {
+    background-color: rgba(101, 132, 226, 0.1);
+    padding: 15px;
+}
+
+.no .noHd {
+    position: relative;
+    border: 1px solid rgba(25, 186, 139, 0.17);
+}
+.no .noHd::before,
+.no .noHd::after {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    content: '';
+}
+.no .noHd::before {
+    top: 0;
+    left: 0;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+}
+
+.no .noHd::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+}
+
+.no .noHd ul {
+    display: flex;
+}
+
+.no .noHd ul li {
+    position: relative;
+    flex: 1;
+    line-height: 80px;
+    font-size: 50px;
+    color: #ffeb7b;
+    text-align: center;
+    //font-family: electronicFont;
+}
+.no .noHd ul li:first-child::after,
+.no .noHd ul li:nth-child(2)::after {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 50%;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    content: '';
+}
+.no .noBd ul {
+    display: flex;
+}
+.no .noBd ul li {
+    flex: 1;
+    padding-top: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/**
+时间模块
+*/
+.showTime {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    line-height: 75px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}

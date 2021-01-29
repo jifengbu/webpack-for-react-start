@@ -1,0 +1,56 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "standard",
+        "standard-react"
+    ],
+    "plugins": [
+        "babel",
+        "react",
+        "promise"
+    ],
+    "globals": {
+        "localStorage": true,
+        "FileReader": true,
+        "T": true,
+        "T_ANCHOR_TOP_LEFT": true,
+        "T_ANCHOR_BOTTOM_LEFT": true,
+        "T_ANCHOR_TOP_RIGHT": true,
+        "BMap": true,
+        "BMAP_STATUS_SUCCESS": true,
+        "BMAP_ANCHOR_TOP_LEFT": true,
+        "BMAP_ANCHOR_BOTTOM_RIGHT": true,
+        "BMAP_NAVIGATION_CONTROL_LARGE": true,
+        "BMAP_ANCHOR_TOP_RIGHT": true,
+        "WebSocket": true
+    },
+    "rules": {
+        "indent": [2, 4, { "SwitchCase": 1 }],
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "jsx-quotes": [2, "prefer-single"],
+        "max-len": 0,
+        "no-template-curly-in-string": 0,
+        "operator-linebreak": 0,
+        "camelcase": 0,
+        //"no-unused-vars": 0,
+        "object-property-newline": 0,
+        "react/jsx-no-bind": 0,
+        "react/prop-types": 0,
+        "eqeqeq": 0,
+        "promise/param-names": 0,
+        "comma-dangle": [2, "always-multiline"],
+        "semi": [2, "always"],
+        "object-curly-spacing": [2, "always"],
+        "key-spacing": [2, {
+            "singleLine": {
+                "beforeColon": false,
+                "afterColon": true
+            },
+            "multiLine": {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        }]
+    }
+}

@@ -1,0 +1,96 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.modal {
+    width: 300px;
+    height: 200px;
+}
+.upload {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+}
+.loadImage {
+    width: 450px;
+    height: 150px;
+}
+.download {
+    display: block;
+    width: 450px;
+    text-align: left;
+    margin-top: 30px;
+    text-decoration:underline;
+}
+.dragger {
+    width: 450px;
+    :global(.ant-upload.ant-upload-drag) {
+        margin-top: 20px !important;
+        height: 150px !important;
+        padding: 10px !important;
+    }
+}
+.qrcodeModal {
+    top: 20px;
+    left: 0px;
+    width: 670px !important;
+    :global(.ant-modal-content) {
+        border-radius: 0 !important;
+    }
+    :global(.ant-modal-content) {
+        box-shadow: none;
+    }
+}
+.buttonInnerContainer {
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button {
+    background-color: #D00D0F;
+    border: 0;
+    &:hover, &:focus {
+        background-color: #E85833;
+    }
+}
+.showModal {
+    margin-left: 120px;
+    margin-bottom: 20px;
+    color: blue;
+    cursor: pointer;
+}
+.selectModalStyle {
+    top: 160px;
+    :global(.ant-modal-body) {
+        padding: 0;
+        width: 800px !important;
+    }
+    :global(.ant-modal-content) {
+        width: 800px !important;
+    }
+}
+.mapContainer {
+    height: 700px;
+    width:100%;
+    display: flex;
+}
+.headContainer {
+     width: 62px;
+     height: 62px;
+     :global(.ant-upload.ant-upload-drag){
+         padding: 0 !important;
+     }
+}
+.head {
+     width: 60px;
+     height: 60px;
+}
+.OrganizationTreeList{
+    height: 98%;
+}

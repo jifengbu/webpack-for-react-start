@@ -1,0 +1,80 @@
+.container {
+    background: url('/hbclient/img/login/login_background.jpg') no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topContainer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.logo {
+    width: 260px;
+    height: 80px;
+    margin-left: 30px;
+}
+.verifyButtonSelected {
+    border: 0px;
+    margin-bottom: 25px;
+    font-size: 11px;
+    width: 96px;
+    left: -36px;
+}
+.verifyButton {
+    border: 0px;
+    margin-bottom: 25px;
+    font-size: 11px;
+    width: 96px;
+    left: -36px;
+}
+.topButton {
+    background-color: #FFF;
+    border: 0px;
+    font-size: 14px;
+    margin-right: 50px;
+}
+.bottomContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer {
+    width: 500px;
+    height: 360px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('/hbclient/img/login/image_login.png') no-repeat;
+    background-size: 100% 100%;
+}
+.form {
+    width: 500px;
+    margin-top: 50px;
+    :global(.ant-input-group-addon) {
+        padding: 0 !important;
+        border: 0 !important;
+    }
+    opacity: 0.8;
+}
+.buttonInnerContainer {
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button {
+    border: 0;
+}

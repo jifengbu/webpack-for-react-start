@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -fr ./build/public/
+cp -r ./assets ./build/public/

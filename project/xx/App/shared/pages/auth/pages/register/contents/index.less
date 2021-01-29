@@ -1,0 +1,92 @@
+.container {
+    background-color: #E7E5E9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.topContainer {
+    height: 100px;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 260px;
+    height: 80px;
+    margin-left: 30px;
+}
+.verifyButtonSelected {
+    background-color: #B5B5B5;
+    border: 0px;
+    margin-bottom: 25px;
+    font-size: 11px;
+    width: 96px;
+    left: -36px;
+    &:focus {
+        background-color: #B5B5B5;
+    }
+}
+.verifyButton {
+    background-color: #8B8386;
+    border: 0px;
+    margin-bottom: 25px;
+    font-size: 11px;
+    width: 96px;
+    left: -36px;
+    &:hover, &:focus {
+        background-color: #B5B5B5;
+    }
+}
+.topButton {
+    background-color: #D00D0F;
+    border: 0px;
+    font-size: 14px;
+    margin-right: 50px;
+    &:hover {
+        background-color: #E85833;
+    }
+}
+.bottomContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer {
+    width: 500px;
+    height: 360px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form {
+    width: 500px;
+    margin-top: 50px;
+    :global(.ant-input-group-addon) {
+        padding: 0 !important;
+        border: 0 !important;
+    }
+}
+.buttonInnerContainer {
+    width: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button {
+    background-color: #D00D0F;
+    border: 0;
+    &:hover, &:focus {
+        background-color: #E85833;
+    }
+}

@@ -1,0 +1,265 @@
+@import 'color.less';
+.container {
+    line-height: 100px;
+    width: 100%;
+    min-width: 1400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+.masterContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 35px;
+    padding-left: 10px;
+    color: #000000;
+}
+.masterName {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.masterTechnology{
+    padding-top: 12px;
+    font-size: 10px;
+    line-height: 20px;
+}
+.masterPhone{
+    padding-top: 3px;
+    font-size: 10px;
+    line-height: 20px;
+}
+.masterDescription {
+    font-size: 13px;
+    color: @menu-selected-color;
+}
+.mainMenuContainer {
+    min-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.mainMenuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    width: 36px;
+    height: 36px;
+}
+.iconText {
+    font-size: 18px;
+}
+.mainMenu {
+    background-color: transparent;
+    border: 0 !important;
+    :global(.ant-menu-item) {
+        padding: 0 20px;
+        border: 0 !important;
+    }
+    :global(.ant-menu-item-selected) {
+        >a {
+            color: @menu-selected-color !important;
+        }
+    }
+    >:not(:global(.ant-menu-item-selected)) {
+        >a {
+            color: @menu-not-selected-color !important;
+        }
+    }
+    :global(.ant-menu-item-active) {
+        >a {
+            color: @menu-active-color !important;
+        }
+    }
+}
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.menu {
+    background-color: transparent;
+    border: 0 !important;
+    :global(.ant-menu-item) {
+        padding: 0 20px;
+        border: 0 !important;
+    }
+    :global(.ant-menu-item-selected) {
+        >a {
+            color: @menu-selected-color !important;
+        }
+    }
+    >:not(:global(.ant-menu-item-selected)) {
+        >a {
+            color: @menu-not-selected-color !important;
+        }
+    }
+    :global(.ant-menu-item-active) {
+        >a {
+            color: @menu-active-color !important;
+        }
+    }
+}
+.firstMenuItem {
+    padding: 0 20px 0 5px !important;
+}
+.firstMenuItem::before {
+    position: absolute;
+    content: ' ';
+    width: 50px;
+    height: 45px;
+    left: -48px;
+    background-image: url(/hbclient/img/head_menu_pre.png);
+    background-size: 50px 48px;
+    background-repeat: no-repeat;
+}
+.line {
+    position: relative;
+    width: 1px;
+    height: 25px !important;
+    top: 10px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: url(/hbclient/img/head_menu_line.png);
+    background-size: 1px 100%;
+}
+.personalMenu {
+    background-color: transparent;
+    border: 0 !important;
+    :global(.ant-menu-item) {
+        padding: 0 20px;
+        border: 0 !important;
+    }
+    :global(.ant-menu-item-selected) {
+        border: 0px !important;
+        >a {
+            color: @menu-selected-color !important;
+        }
+    }
+    >:not(:global(.ant-menu-item-selected)) {
+        >a {
+            color: @menu-not-selected-color !important;
+        }
+    }
+    :global(.ant-menu-item-active) {
+        border: 0 !important;
+        >a {
+            color: @menu-active-color !important;
+        }
+    }
+}
+.head {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.modal {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 995px;
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(172, 172, 172, 0.5);
+    z-index: 1000;
+}
+.modalContain {
+    width: 706px;
+    height: 358px;
+    background: #FFFFFF;
+    align-items: center;
+    border-radius: 5px;
+}
+.modalTitle {
+    margin-top: 80px;
+    display: block;
+    flex-direction: column;
+}
+.modalTop {
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.modalImage {
+    width: 33px;
+    height: 29px;
+    margin-bottom: 10px;
+}
+.topTitle {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 28px;
+    line-height: 28px;
+}
+.modalMiddle {
+    margin-left: 180px;
+    margin-top: 35px;
+    font-size: 28px;
+    line-height: 28px;
+}
+.modalBottom {
+    margin-left: 450px;
+}
+.closeModal {
+    float: right;
+    height: 20px;
+    width: 20px;
+    background-color: #2593fc;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 18px;
+}
+.modalButton {
+    width: 100px;
+    height: 46px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.downloadContainer {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.downloadUrl {
+    margin-top: 40px;
+}

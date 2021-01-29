@@ -1,0 +1,95 @@
+@import 'color.less';
+.sider {
+    position: absolute;
+    height: 100%;
+    width: 180px;
+    z-index: 0;
+    padding-top: 125px;
+    display: flex;
+}
+.menu {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px !important;
+    :global(.ant-menu-item) {
+        >a {
+            color: @menu-not-selected-color !important;
+        }
+        font-size: 18px !important;
+        font-family:'FangSong'  !important;
+        font-weight: 600 !important;
+    }
+    :global(.ant-menu-item-selected) {
+        height: 52px !important;
+        background: none !important;
+        >a {
+            color: @menu-selected-color !important;
+        }
+    }
+    :global(.ant-menu-submenu-title) {
+        >a {
+            color: @menu-selected-color !important;
+        }
+        color: #000000 !important;
+        height: 60px !important;
+        line-height: 60px !important;
+        text-align: center;
+        padding-right: 25px;
+        font-size: 20px !important;
+        font-family:'FangSong'  !important;
+        font-weight: 600 !important;
+    }
+    :global(.ant-menu-sub) {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    >:not(:global(.ant-menu-item-selected)) {
+        >a {
+            color: @menu-not-selected-color !important;
+        }
+    }
+    :global(.ant-menu-item-active) {
+        >a {
+            color: @menu-active-color !important;
+        }
+    }
+    :global(.ant-menu-item:after) {
+        border-right: 0px !important;
+    }
+    >:not(global(.ant-menu-item)) {
+        >a {
+            color: @menu-not-selected-color !important;
+        }
+    }
+    :global(.sidebar__label___cfCpO) {
+        font-size: 20px !important;
+    }
+}
+.menuItem {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center !important;
+    font-size: 18px !important;
+}
+.label {
+    display: inline-block;
+    width: 100px;
+}
+.subLabel {
+    margin-left: 40px;
+    font-size: 14px;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+}
+.gradient_blue {
+    flex: 1;
+    padding-bottom: 24px;
+    overflow-x: hidden;
+}
+.gradient_red {
+    flex: 1;
+    padding-bottom: 24px;
+    overflow-x: hidden;
+}
