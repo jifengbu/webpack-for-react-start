@@ -10,7 +10,7 @@ pids
 package-lock.json
 yarn.lock
 node_modules
-/project/build
+/project/dist
 /project/public
 /dist/*
 !/dist/package.json
